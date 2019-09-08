@@ -11,12 +11,12 @@ The app is composed of one screen.
 Allows you to browse through the yearly records of Mobile data consumption in Singapore.
 
 Each result from API call is kept in the database in `Result` table.
-The actual `Repo` instances live in the `Repo` table.
 
 
-**NOTE** The UI currently loads all `Repo` items at once, which would not
-perform well on lower end devices. Instead of manually writing lazy
-adapters, we've decided to wait until the built in support in Room is released.
+**NOTE** The UI currently loads all `Results` items at once, which would not
+perform well on lower end devices. But since the list, by virtue of the type
+ of its content, will not grow exponentially hence one-time load should work
+ for this problem.
 
 ### Building
 You can open the project in Android studio and press run.
