@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="photo_size">20dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="result_item_padding">12dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+
+    <dimen name="text_size_one">12sp</dimen>
+    <dimen name="text_size_two">14sp</dimen>
+    <dimen name="text_size_three">16sp</dimen>
+    <dimen name="text_size_four">18sp</dimen>
+    <dimen name="text_size_five">20sp</dimen>
+    <dimen name="text_size_six">22sp</dimen>
+    <dimen name="text_size_seven">24sp</dimen>
+    <dimen name="text_size_eight">28sp</dimen>
+    <dimen name="text_size_nine">32sp</dimen>
+    <dimen name="text_size_ten">36sp</dimen>
+</resources>
