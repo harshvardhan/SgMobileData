@@ -6,23 +6,17 @@ Introduction
 
 ### Functionality
 The app is composed of one screen.
+
 #### ResultFragment
 Allows you to browse through the yearly records of Mobile data consumption in Singapore.
-Each result from API call is kept in the database in `Result` table where
-the list of repository IDs are denormalized into a single column.
+
+Each result from API call is kept in the database in `Result` table.
 The actual `Repo` instances live in the `Repo` table.
 
-Each time a new page is fetched, the same `RepoSearchResult` record in the
-Database is updated with the new list of repository ids.
 
 **NOTE** The UI currently loads all `Repo` items at once, which would not
 perform well on lower end devices. Instead of manually writing lazy
 adapters, we've decided to wait until the built in support in Room is released.
-
-#### RepoFragment
-This fragment displays the details of a repository and its contributors.
-#### UserFragment
-This fragment displays a user and their repositories.
 
 ### Building
 You can open the project in Android studio and press run.
@@ -75,23 +69,3 @@ The project uses [MockWebServer][mockwebserver] project to test REST api interac
 [glide]: https://github.com/bumptech/glide
 [timber]: https://github.com/JakeWharton/timber
 [mockito]: http://site.mockito.org
-
-License
---------
-
-Copyright 2017 The Android Open Source Project, Inc.
-
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
