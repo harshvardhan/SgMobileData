@@ -9,8 +9,10 @@ The app is composed of one screen.
 
 #### ResultFragment
 Allows you to browse through the yearly records of Mobile data consumption in Singapore.
-
 Each result from API call is kept in the database in `Result` table.
+The API results are cached in the Room database, hence the subsequent request calls to the
+API are served from Room database.
+
 
 
 **NOTE** The UI currently loads all `Results` items at once, which would not
@@ -69,3 +71,7 @@ The project uses [MockWebServer][mockwebserver] project to test REST api interac
 [glide]: https://github.com/bumptech/glide
 [timber]: https://github.com/JakeWharton/timber
 [mockito]: http://site.mockito.org
+
+### Limitations
+* Instrumentation test are not running.
+
