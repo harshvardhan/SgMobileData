@@ -40,6 +40,12 @@ versions.rxjava2 = "2.1.3"
 versions.support = "1.0.0"
 versions.timber = "4.5.1"
 versions.work = "2.1.0"
+versions.fabric = "1.+"
+versions.crashlytics = "2.9.8@aar"
+versions.leakcanary = "2.0-alpha-3"
+versions.leakcanary_android_no_op = "1.6.3"
+versions.debug_db = "1.0.4"
+
 ext.versions = versions
 
 def deps = [:]
@@ -165,6 +171,15 @@ navigation.ui = "androidx.navigation:navigation-ui:$versions.navigation"
 navigation.ui_ktx = "androidx.navigation:navigation-ui-ktx:$versions.navigation"
 navigation.safe_args_plugin = "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navigation"
 deps.navigation = navigation
+
+def thrid_party= [:]
+thrid_party.fabric = "io.fabric.tools:gradle:$versions.fabric"
+thrid_party.crashlytics = "com.crashlytics.sdk.android:crashlytics:$versions.crashlytics"
+thrid_party.debug_db = "com.amitshekhar.android:debug-db:$versions.debug_db"
+thrid_party.leakcanary = "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
+thrid_party.leakcanary_android_no_op = "'com.squareup.leakcanary:leakcanary-android-no-op':$versions.leakcanary_android_no_op"
+
+deps.thrid_party = thrid_party
 
 ext.deps = deps
 

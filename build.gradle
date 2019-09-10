@@ -7,8 +7,14 @@ buildscript {
         classpath deps.kotlin.plugin
         classpath deps.kotlin.allopen
         classpath deps.navigation.safe_args_plugin
+        classpath deps.thrid_party.fabric
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
     }
 }
 

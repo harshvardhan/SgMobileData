@@ -19,6 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".testing.SingleFragmentActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b8f3e6f62b5ac97491bf920b3f2b28cfb6d6cafa"
+            />
     </application>
 
 </manifest>

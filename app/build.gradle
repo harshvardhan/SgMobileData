@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'jacoco'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
 
 apply plugin: 'kotlin-allopen'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
@@ -84,6 +85,13 @@ dependencies {
     implementation deps.kotlin.stdlib
 
     implementation deps.timber
+    debugImplementation deps.thrid_party.debug_db
+    debugImplementation deps.thrid_party.leakcanary
+    // No-Op version of LeakCanary for release builds: no notifications, no analysis, nothing
+    //releaseCompile deps.thrid_party.leakcanary_android_no_op
+    implementation (deps.thrid_party.crashlytics){
+        transitive = true;
+    }
 
     kapt deps.dagger.android_support_compiler
     kapt deps.dagger.compiler
