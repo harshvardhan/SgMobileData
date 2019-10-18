@@ -3,6 +3,10 @@ SgMobileData with Android Architecture Components
 
 Introduction
 -------------
+###Scope
+List of yearly record of Mobile data consumption in Singapore and highlighting the year in which
+there has been a decrease in the consumption between the quarters. Written in Kotlin, this app supports caching
+and works on Architectural Components from Android.
 
 ### Functionality
 The app is composed of one screen.
@@ -12,7 +16,6 @@ Allows you to browse through the yearly records of Mobile data consumption in Si
 Each result from API call is kept in the database in `Result` table.
 The API results are cached in the Room database, hence the subsequent request calls to the
 API are served from Room database.
-
 
 
 **NOTE** The UI currently loads all `Results` items at once, which would not
