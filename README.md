@@ -3,7 +3,8 @@ SgMobileData with Android Architecture Components
 
 Introduction
 -------------
-###Scope
+
+### Scope
 List of yearly record of Mobile data consumption in Singapore and highlighting the year in which
 there has been a decrease in the consumption between the quarters. Written in Kotlin, this app supports caching
 and works on Architectural Components from Android.
